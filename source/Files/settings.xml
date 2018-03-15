@@ -1,0 +1,45 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <profiles>
+    <profile>
+      <id>mpi-settings</id>
+      <repositories>
+        <repository>
+          <id>MPI</id>
+          <name>MPI LAT Repository</name>
+          <url>http://lux15.mpi.nl/nexus/content/groups/public</url>
+        </repository>
+	      <repository>
+ 	        <id>MPI-Snapshot</id>
+	        <name>MPI LAT Snapshot Repository</name>
+  	      <url>http://lux15.mpi.nl/nexus/content/repositories/MPI-Snapshots/</url>
+  	      <snapshots>
+   	        <enabled>true</enabled>
+ 	        </snapshots>
+	      </repository>
+        <repository>
+           <id>CLARIN</id>
+           <name>CLARIN Repository</name>
+           <url>https://nexus.clarin.eu/content/repositories/Clarin</url>
+           <snapshots>
+              <enabled>false</enabled>
+           </snapshots>
+        </repository>
+        <repository>
+           <id>CLARIN-Snapshot</id>
+           <name>CLARIN Snapshot Repository</name>
+           <url>https://nexus.clarin.eu/content/repositories/clarin-snapshot</url>
+           <snapshots>
+              <enabled>true</enabled>
+           </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>mpi-settings</activeProfile>
+  </activeProfiles>
+  
+</settings>
