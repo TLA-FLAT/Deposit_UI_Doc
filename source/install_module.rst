@@ -19,3 +19,5 @@ The most important elements added by the base module are different field types, 
 
 
 For every field, a table is created in the drupal database with the name field_data_{fieldInstanceName}. Variables are saved as serialized string in th4e variables table
+
+
